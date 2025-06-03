@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>美国文学史.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="%F0%9F%93%98-week-1%E2%80%932-summary-colonial-america-and-the-rise-of-nationhood">📘 <strong>Week 1–2 Summary: Colonial America and the Rise of Nationhood</strong></h2>
+<hr>
+<h3 id="%F0%9F%95%AF%EF%B8%8F-i-american-puritanism-17th-century">🕯️ <strong>I. American Puritanism (17th Century)</strong></h3>
+<p><strong>🧭 Historical Context</strong></p>
+<ul>
+<li>Early 1600s: English Puritan settlers in New England</li>
+<li>Goal: Build a purified, godly society (“City upon a Hill”)</li>
+<li>Theocracy: Church and civil life intertwined</li>
+</ul>
+<p><strong>✨ Core Beliefs</strong></p>
+<ul>
+<li>Predestination, Original Sin, Total Depravity</li>
+<li>Practical idealism; moral code + social regulation</li>
+<li>Typology: reading contemporary events as biblical parallels</li>
+<li>Puritanism as a <strong>mindset</strong>, not just a doctrine</li>
+</ul>
+<p><strong>🖋️ Key Figures and Texts</strong></p>
+<ul>
+<li><strong>William Bradford</strong> – <em>Of Plymouth Plantation</em>:
+Historical account of Puritan migration and hardships</li>
+<li><strong>Anne Bradstreet</strong> – <em>Contemplations</em>:
+Devotional poetry linking nature to divine praise</li>
+<li><strong>Jonathan Edwards</strong> – <em>Sinners in the Hands of an Angry God</em>:
+Vivid sermons invoking fear and submission before God's will</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%87%BA%F0%9F%87%B8-ii-the-age-of-nationhood-late-18th-century">🇺🇸 <strong>II. The Age of Nationhood (Late 18th Century)</strong></h3>
+<p><strong>🧭 Historical Context</strong></p>
+<ul>
+<li>American independence from Britain</li>
+<li>Need to define <strong>national identity</strong>, culture, and literature</li>
+<li>Writers were still culturally English — required conscious effort to “Americanize”</li>
+</ul>
+<p><strong>🏛️ Key Ideas</strong></p>
+<ul>
+<li>Literature as <strong>nation-building tool</strong></li>
+<li>Quest for American uniqueness: divine mission + political destiny</li>
+<li>Emergence of American language (e.g., <strong>Noah Webster</strong>’s 1828 Dictionary: 5,000+ new American words)</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%91%A4-iii-representative-authors-of-early-nationhood">👤 <strong>III. Representative Authors of Early Nationhood</strong></h3>
+<h4 id="%F0%9F%A7%91%E2%80%8D%F0%9F%92%BC-benjamin-franklin-1706%E2%80%931790">🧑‍💼 Benjamin Franklin (1706–1790)</h4>
+<ul>
+<li><strong>Works</strong>: <em>Autobiography</em>, <em>Poor Richard’s Almanac</em></li>
+<li>Embodiment of the American Dream: rationalism, self-improvement</li>
+<li>Style: clear, witty, practical; adapted Enlightenment ideas for everyday use</li>
+<li>Not poetic but influential in moral and civic thought</li>
+</ul>
+<h4 id="%F0%9F%93%96-william-hill-brown-%E2%80%93-the-power-of-sympathy-1789">📖 William Hill Brown – <em>The Power of Sympathy</em> (1789)</h4>
+<ul>
+<li>First American novel (epistolary form)</li>
+<li>Tragic love story aimed at female readers</li>
+<li>Didactic: reinforced virtue, social responsibility, ideal womanhood</li>
+<li>Fiction used as moral education for new citizens</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%8C%8D-iv-the-shift-toward-fiction-and-myth-making-early-19th-century">🌍 <strong>IV. The Shift Toward Fiction and Myth-Making (Early 19th Century)</strong></h3>
+<h4 id="%F0%9F%A7%99-washington-irving-1783%E2%80%931859">🧙 Washington Irving (1783–1859)</h4>
+<ul>
+<li><strong>Works</strong>: “Rip Van Winkle,” “The Legend of Sleepy Hollow”</li>
+<li>Blended American settings with European Romanticism and folklore</li>
+<li>Used humor, nostalgia, and allegory to explore identity before and after Revolution</li>
+<li>One of the first American writers to gain global recognition</li>
+</ul>
+<h4 id="%F0%9F%A4%A0-james-fenimore-cooper-1789%E2%80%931851">🤠 James Fenimore Cooper (1789–1851)</h4>
+<ul>
+<li>
+<p><strong>Works</strong>: <em>The Leatherstocking Tales</em></p>
+</li>
+<li>
+<p>Invented the American historical romance and “Western” genre</p>
+</li>
+<li>
+<p>Themes:</p>
+<ul>
+<li>Nature vs. civilization</li>
+<li>Freedom vs. law</li>
+<li>Wilderness vs. Eden</li>
+</ul>
+</li>
+<li>
+<p>Helped mythologize American frontier as part of national identity</p>
+</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%92%A1-v-thematic-threads-for-essay-use">💡 <strong>V. Thematic Threads for Essay Use</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>How to Expand</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nation-building</td>
+<td>Literature used to construct cultural uniqueness and moral vision</td>
+</tr>
+<tr>
+<td>Puritan legacy</td>
+<td>Enduring moral themes, sermon rhetoric, and providential worldview</td>
+</tr>
+<tr>
+<td>Gender &amp; fiction</td>
+<td>Novels targeting women as readers and moral subjects</td>
+</tr>
+<tr>
+<td>American exceptionalism</td>
+<td>“Promised land” imagery, divine mission, wilderness myth</td>
+</tr>
+</tbody>
+</table>
+<p>Here is a <strong>structured and essay-ready summary for Weeks 3–4</strong> of your American Literature course, covering <strong>American Romanticism</strong>, <strong>Transcendentalism</strong>, and <strong>its dark counterparts</strong>. This format includes: historical context, core ideas, major figures and works, and thematic highlights — ideal for exam writing or memory revision.</p>
+<hr>
+<h2 id="%F0%9F%93%98-week-3%E2%80%934-summary-american-romanticism--transcendentalism">📘 <strong>Week 3–4 Summary: American Romanticism &amp; Transcendentalism</strong></h2>
+<hr>
+<h3 id="%F0%9F%8C%B9-i-american-romanticism-early%E2%80%93mid-19th-century">🌹 <strong>I. American Romanticism (Early–Mid 19th Century)</strong></h3>
+<p><strong>🧭 Historical Background</strong></p>
+<ul>
+<li>Emerged in response to <strong>Enlightenment rationalism</strong></li>
+<li>Emphasized <strong>emotion</strong>, <strong>imagination</strong>, <strong>subjectivity</strong>, and the <strong>individual</strong></li>
+<li>American Romanticism borrowed from European Romanticism (1798 UK: <em>Lyrical Ballads</em>)</li>
+<li>Included <strong>historical fiction</strong>, <strong>sentimental fiction</strong>, and early <strong>Transcendentalism</strong></li>
+</ul>
+<p><strong>📖 Key Traits</strong></p>
+<ul>
+<li>Nature as sublime, mysterious, and moral</li>
+<li>Interest in American <strong>myth</strong> and <strong>legend</strong> (e.g. frontier, past heroes)</li>
+<li>Development of fiction as a national form</li>
+</ul>
+<p><strong>👤 James Fenimore Cooper</strong></p>
+<ul>
+<li><em>Leatherstocking Tales</em></li>
+<li>Father of American historical romance</li>
+<li>Themes: <strong>nature vs. civilization</strong>, <strong>freedom vs. law</strong>, <strong>Eden vs. wilderness</strong></li>
+</ul>
+<hr>
+<h3 id="%F0%9F%8C%84-ii-transcendentalism-1830s%E2%80%931860s">🌄 <strong>II. Transcendentalism (1830s–1860s)</strong></h3>
+<blockquote>
+<p>“A spiritual rebellion against reason and tradition”</p>
+</blockquote>
+<p><strong>🧠 Core Beliefs</strong></p>
+<ul>
+<li><strong>Imagination &gt; reason</strong>, <strong>intuition &gt; logic</strong></li>
+<li>Nature is divine, symbolic of the <strong>over-soul</strong></li>
+<li>The <strong>individual self</strong> is sacred and autonomous</li>
+<li>Rejection of institutional religion (esp. Puritanism)</li>
+</ul>
+<p><strong>Key Figures and Ideas</strong></p>
+<hr>
+<h4 id="%F0%9F%94%B7-ralph-waldo-emerson-1803%E2%80%931882">🔷 Ralph Waldo Emerson (1803–1882)</h4>
+<ul>
+<li>
+<p>Called the “Father of American Thought”</p>
+</li>
+<li>
+<p>Editor of <em>The Dial</em>; essayist and philosopher</p>
+</li>
+<li>
+<p>Major works:</p>
+<ul>
+<li><em>Nature</em> — “The universe is the externalization of the soul”</li>
+<li><em>The American Scholar</em> — Declaration of intellectual independence</li>
+</ul>
+</li>
+<li>
+<p>Style: <strong>aphoristic</strong>, poetic, visionary</p>
+</li>
+<li>
+<p>Belief in the <strong>divinity of man</strong>, hope, and <strong>self-reliance</strong></p>
+</li>
+<li>
+<p>Criticism: overly optimistic, blind to evil</p>
+</li>
+</ul>
+<hr>
+<h4 id="%F0%9F%8C%BF-henry-david-thoreau-1817%E2%80%931862">🌿 Henry David Thoreau (1817–1862)</h4>
+<ul>
+<li>Follower of Emerson; lived at <strong>Walden Pond</strong></li>
+<li><em>Walden</em> — experiment in simplicity, self-sufficiency, communion with nature</li>
+<li><em>Civil Disobedience</em> — protest against unjust government (inspired Gandhi, MLK)</li>
+<li>Nature as moral guide; life reduced to essentials</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%8C%98-iii-reactions-against-transcendentalism-dark-romanticism">🌘 <strong>III. Reactions Against Transcendentalism: Dark Romanticism</strong></h3>
+<h4 id="%E2%9A%AB-nathaniel-hawthorne-1804%E2%80%931864">⚫ Nathaniel Hawthorne (1804–1864)</h4>
+<ul>
+<li>Mixed Puritan legacy with romantic allegory</li>
+<li>Believed in the <strong>dark side of the soul</strong>: sin, guilt, ambiguity</li>
+<li>Symbolism + psychological depth</li>
+</ul>
+<p><strong>Major Works:</strong></p>
+<ul>
+<li><em>The Scarlet Letter</em> — A becomes ambiguous: angel? adulteress?</li>
+<li><em>Young Goodman Brown</em> — Forest journey as spiritual crisis; distrust rooted in Puritan doctrine</li>
+<li>Themes: <strong>moral ambivalence</strong>, <strong>ancestral guilt</strong>, <strong>failed idealism</strong></li>
+</ul>
+<hr>
+<h4 id="%E2%9A%93-herman-melville-1819%E2%80%931891">⚓ Herman Melville (1819–1891)</h4>
+<ul>
+<li>
+<p><em>Moby Dick</em> (1851) — metaphysical epic; tragic humanism</p>
+</li>
+<li>
+<p>Nature is <strong>not nurturing</strong> but chaotic and indifferent</p>
+</li>
+<li>
+<p>Ishmael as wanderer; Ahab as obsessive anti-hero</p>
+</li>
+<li>
+<p>Themes:</p>
+<ul>
+<li><strong>Alienation</strong> (man vs. nature/society/self)</li>
+<li><strong>Self-reliance</strong> vs. <strong>solipsism</strong> (danger of extreme individualism)</li>
+<li>Universe as godless, purpose as futile</li>
+</ul>
+</li>
+</ul>
+<p><strong>Symbolism in Moby Dick</strong>:</p>
+<ul>
+<li><em>Pequod</em> as America itself</li>
+<li><em>Moby Dick</em> as unknowable truth or fate</li>
+<li><em>Ahab</em> = unchecked will, destructive self-centeredness</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%92%8C-iv-sentimental-fiction-moral-emotion-as-political-force">💌 <strong>IV. Sentimental Fiction: Moral Emotion as Political Force</strong></h3>
+<h4 id="%F0%9F%91%A9-harriet-beecher-stowe-%E2%80%93-uncle-toms-cabin-1852">👩 Harriet Beecher Stowe – <em>Uncle Tom’s Cabin</em> (1852)</h4>
+<ul>
+<li>Triggered social empathy; helped stir the <strong>Civil War</strong></li>
+<li>Fiction as moral persuasion: dramatized cruelty of slavery</li>
+<li>Not “high literature” but historically impactful</li>
+<li>Uses <strong>sympathy</strong>, <strong>pity</strong>, and <strong>Christian virtue</strong> to move readers</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%8C%88-v-poets-of-romanticism--transcendentalist-influence">🌈 <strong>V. Poets of Romanticism / Transcendentalist Influence</strong></h3>
+<h4 id="%F0%9F%97%A3%EF%B8%8F-walt-whitman-1819%E2%80%931892">🗣️ Walt Whitman (1819–1892)</h4>
+<ul>
+<li><em>Leaves of Grass</em> — celebration of <strong>body</strong>, <strong>nation</strong>, <strong>life</strong></li>
+<li>Transcendental optimism, democratic spirit</li>
+<li>Revolutionized poetic form: free verse, inclusive subject matter</li>
+<li>Embraced the ugly and the ordinary; later reputation suffered from excess</li>
+<li>Believed in <strong>poetry as a song for America</strong></li>
+</ul>
+<h4 id="%F0%9F%8C%B8-emily-dickinson-1830%E2%80%931886">🌸 Emily Dickinson (1830–1886)</h4>
+<ul>
+<li>Wrote 1775 poems; only 7 published in lifetime</li>
+<li>Introverted, concise, symbolic, emotionally potent</li>
+<li>Style: dashes, slant rhyme, ambiguity, minimalism</li>
+<li>Themes: death, faith, inner life, beauty and pain</li>
+<li>“Every word is a picture scene”</li>
+<li><em>“Pain is the air of Dickinson’s life”</em> – Harold Bloom</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%92%80-vi-edgar-allan-poe-1809%E2%80%931849">💀 <strong>VI. Edgar Allan Poe (1809–1849)</strong></h3>
+<ul>
+<li>
+<p>Master of <strong>macabre</strong>, <strong>mystery</strong>, and <strong>melancholy</strong></p>
+</li>
+<li>
+<p>First to theorize short story as a complete form (“unity of effect”)</p>
+</li>
+<li>
+<p>Major themes:</p>
+<ul>
+<li><strong>Death of beautiful women</strong> = most poetic topic</li>
+<li><strong>Aesthetic beauty</strong> + psychological horror</li>
+</ul>
+</li>
+<li>
+<p>Also originator of <strong>detective fiction</strong></p>
+</li>
+<li>
+<p>Known for precise structure, haunting rhythm, lyrical beauty</p>
+</li>
+<li>
+<p>Example works: <em>The Raven</em>, <em>The Fall of the House of Usher</em>, <em>Ligeia</em></p>
+</li>
+<li>
+<p>Beauty = what moves us to tears</p>
+</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%A7%A0-essay-review-prompts-week-3%E2%80%934">🧠 Essay Review Prompts (Week 3–4)</h2>
+<ol>
+<li><strong>What are the main tenets of American Transcendentalism?</strong></li>
+<li><strong>Compare Emersonian self-reliance with Melville’s view of extreme individualism.</strong></li>
+<li><strong>How does Hawthorne critique the optimistic view of human nature in Transcendentalism?</strong></li>
+<li><strong>Why is <em>Uncle Tom’s Cabin</em> considered a turning point in American fiction?</strong></li>
+<li><strong>What symbolic meanings emerge from <em>Moby Dick</em> and the figure of Ahab?</strong></li>
+</ol>
+<hr>
+<h2 id="%F0%9F%93%98-week-5-summary-realism-and-local-colorism-post-civil-war-america">📘 <strong>Week 5 Summary: Realism and Local Colorism (Post-Civil War America)</strong></h2>
+<h3 id="%F0%9F%95%B0%EF%B8%8F-i-historical-context">🕰️ <strong>I. Historical Context</strong></h3>
+<ul>
+<li><strong>Civil War aftermath</strong> (1861–1865):
+Loss, disillusionment, industrialization, and a crisis in moral values</li>
+<li><strong>Decline of Transcendental optimism</strong>:
+Doubts about man’s inherent goodness, divine nature, or a benevolent God</li>
+<li><strong>Closing frontier</strong>: Dream of endless American expansion falters</li>
+<li><strong>Reaction against</strong> Romanticism and Sentimentalism:
+Realism rises to depict <strong>truth</strong>, not idealism</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%93%9A-ii-realism-represent-life-honestly">📚 <strong>II. Realism: “Represent Life Honestly”</strong></h3>
+<p><strong>Core Tenets</strong></p>
+<ul>
+<li>Objective, detailed representation of everyday life</li>
+<li>Rejection of idealism and romantic fantasy</li>
+<li>Focus on <strong>moral complexity</strong>, <strong>psychological depth</strong>, <strong>social detail</strong></li>
+</ul>
+<hr>
+<h3 id="%F0%9F%96%8B%EF%B8%8F-iii-key-realist-writers">🖋️ <strong>III. Key Realist Writers</strong></h3>
+<hr>
+<h4 id="%F0%9F%93%98-william-dean-howells-1837%E2%80%931920">📘 <em>William Dean Howells</em> (1837–1920)</h4>
+<ul>
+<li><em>The Rise of Silas Lapham</em> (1885):
+A businessman loses his fortune but finds ethical redemption</li>
+<li>Advocated <strong>truth as beauty</strong></li>
+<li>Emphasized <strong>psychological realism</strong> and <strong>moral dilemmas</strong></li>
+</ul>
+<hr>
+<h4 id="%F0%9F%8E%AD-henry-james-1843%E2%80%931916">🎭 <em>Henry James</em> (1843–1916)</h4>
+<p><strong>Phases &amp; Style</strong></p>
+<ul>
+<li>
+<p><strong>International Theme</strong>: American innocence vs. European sophistication</p>
+<ul>
+<li><em>Daisy Miller</em>, <em>The Portrait of a Lady</em></li>
+</ul>
+</li>
+<li>
+<p>Later works: complex relationships, drama, point-of-view techniques</p>
+<ul>
+<li><em>The Ambassadors</em>, <em>The Golden Bowl</em></li>
+</ul>
+</li>
+<li>
+<p>Known for:</p>
+<ul>
+<li>“The Art of Fiction” → fiction should <strong>represent life</strong>, not “reality”</li>
+<li><strong>Prime sensibility</strong>: the author's intelligence and sensitivity shape truth</li>
+<li>Early adopter of <strong>stream-of-consciousness</strong> and <strong>psychological realism</strong></li>
+<li>Pioneered <strong>open endings</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Key Work: <em>The Portrait of a Lady</em></strong></p>
+<ul>
+<li><strong>Isabel Archer</strong>’s idealism and tragic self-awareness</li>
+<li>Drama of consciousness; tension between self-fulfillment and social constraint</li>
+<li>Recurring theme: individual’s choice vs. social manipulation</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%8E%A8-iv-local-colorism-realism-with-regional-detail">🎨 <strong>IV. Local Colorism: Realism with Regional Detail</strong></h3>
+<p><strong>Definition</strong></p>
+<ul>
+<li>Realism rooted in <strong>regional setting</strong>, dialect, lifestyle, customs</li>
+<li>Popular from 1860s–1890s</li>
+<li>Celebrates the <strong>diversity of American life</strong></li>
+</ul>
+<hr>
+<h4 id="%F0%9F%9B%B6-mark-twain-1835%E2%80%931910">🛶 <em>Mark Twain</em> (1835–1910)</h4>
+<ul>
+<li>
+<p><strong>Background</strong>: Steamboat pilot; coined &quot;Mark Twain&quot; (two fathoms deep)</p>
+</li>
+<li>
+<p><strong>Language</strong>: American vernacular, humor, satire</p>
+</li>
+<li>
+<p><strong>Key Works</strong>:</p>
+<ul>
+<li><em>The Adventures of Tom Sawyer</em> (1876)</li>
+<li><em>The Adventures of Huckleberry Finn</em> (1884)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Huckleberry Finn Highlights</strong></p>
+<ul>
+<li>
+<p><strong>First-person narrative</strong>: Huck’s authentic voice</p>
+</li>
+<li>
+<p>Themes:</p>
+<ul>
+<li>Morality vs. society’s values</li>
+<li>Freedom, friendship (Huck and Jim)</li>
+<li>American hypocrisy, racism, and conscience</li>
+</ul>
+</li>
+<li>
+<p>Historical Impact:</p>
+<ul>
+<li>Marked the <strong>end of New England literary dominance</strong></li>
+<li>Celebrated <strong>authentic American themes</strong>, setting, and voice</li>
+<li>Influenced Hemingway, Faulkner</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="%F0%9F%92%8B-kate-chopin-1851%E2%80%931904">💋 <em>Kate Chopin</em> (1851–1904)</h4>
+<ul>
+<li>Rediscovered in 1960s–70s (feminist revival)</li>
+<li>Depicted Louisiana's <strong>Creole society</strong>, French Catholic influences</li>
+<li><strong>Style</strong>: sensual, bold, emotionally honest</li>
+</ul>
+<p><strong>Key Work: <em>The Awakening</em> (1899)</strong></p>
+<ul>
+<li>A woman’s pursuit of <strong>sexual and emotional independence</strong></li>
+<li>Scandalized critics: explored <strong>female desire and infidelity</strong></li>
+<li>Set in <strong>New Orleans</strong> with strong sense of place</li>
+<li>Pathbreaking: depicted women as sensuous, not merely moral figures</li>
+<li>Quote: <em>“Beyond awakening there is no transcendence.”</em></li>
+</ul>
+<hr>
+<h3 id="%F0%9F%92%AC-v-key-themes-across-realism-and-local-colorism">💬 <strong>V. Key Themes Across Realism and Local Colorism</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Realist Expression</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Moral ambiguity</td>
+<td>No easy answers; characters shape fate through choice</td>
+</tr>
+<tr>
+<td>Individual vs. society</td>
+<td>Huck’s inner truth vs. laws; Isabel’s ideals vs. Merle/Osmond</td>
+</tr>
+<tr>
+<td>Loss of optimism</td>
+<td>Frontier gone; faith in American Dream falters</td>
+</tr>
+<tr>
+<td>Regional identity</td>
+<td>Dialect, setting, social detail = national mosaic</td>
+</tr>
+<tr>
+<td>Gender and power</td>
+<td>Kate Chopin challenged male-centric realism</td>
+</tr>
+<tr>
+<td>Language &amp; voice</td>
+<td>Vernacular speech → authentic America</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%F0%9F%93%9D-essay-review-prompts">📝 <strong>Essay Review Prompts</strong></h3>
+<ol>
+<li><strong>Compare Huck Finn and Isabel Archer</strong> as realist characters: What moral choices define them?</li>
+<li><strong>How do Henry James and William Dean Howells differently represent morality and realism?</strong></li>
+<li><strong>Discuss the feminist dimensions in Kate Chopin’s <em>The Awakening</em>.</strong></li>
+<li><strong>How does <em>Huckleberry Finn</em> use local color and satire to critique American society?</strong></li>
+</ol>
+<hr>
+<p>Here is a well-structured, markdown-friendly, essay-ready <strong>summary of Week 6: Realism and Naturalism</strong>, focused on definitions, distinctions, historical context, key figures, and thematic content. It is optimized for efficient recall and flexible use in essays.</p>
+<hr>
+<h2 id="%F0%9F%A7%AD-week-6-summary-realism-and-naturalism-in-american-literature">🧭 Week 6 Summary: <strong>Realism and Naturalism in American Literature</strong></h2>
+<hr>
+<h3 id="%F0%9F%93%9A-i-historical-background">📚 I. Historical Background</h3>
+<ul>
+<li><strong>Realism</strong>: Emerged after the <strong>Civil War (1861–1865)</strong>, responding to the collapse of idealism and transcendental optimism.</li>
+<li><strong>Naturalism</strong>: Followed Realism in the <strong>late 19th century</strong>, shaped by <strong>Darwinism</strong>, <strong>industrial capitalism</strong>, and the <strong>closing of the frontier</strong>.</li>
+<li>Rapid <strong>industrialization</strong>, <strong>urban poverty</strong>, and <strong>scientific determinism</strong> led to a shift from realism to <strong>naturalism</strong>—a bleaker, more deterministic worldview.</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%94%8D-ii-key-differences-realism-vs-naturalism">🔍 II. Key Differences: Realism vs. Naturalism</h3>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Realism</th>
+<th>Naturalism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View of life</td>
+<td>Objective, truthful, slice of life</td>
+<td>Deterministic, bleak, driven by external forces</td>
+</tr>
+<tr>
+<td>Influence</td>
+<td>Reaction to Romanticism</td>
+<td>Grew out of Realism; influenced by Darwin, Marx</td>
+</tr>
+<tr>
+<td>Focus</td>
+<td>Moral complexity, social realism</td>
+<td>Human beings as victims of heredity, environment</td>
+</tr>
+<tr>
+<td>Tone</td>
+<td>Observational, restrained</td>
+<td>Pessimistic, often fatalistic</td>
+</tr>
+<tr>
+<td>Agency</td>
+<td>Some moral or personal autonomy</td>
+<td><strong>No free will</strong>: biological, social determinism</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%F0%9F%A7%AA-iii-key-concepts-in-naturalism">🧪 III. Key Concepts in Naturalism</h3>
+<ul>
+<li><strong>Biological Determinism</strong> → Charles Darwin</li>
+<li><strong>Economic Determinism</strong> → Karl Marx</li>
+<li><strong>Human as animal</strong>, instincts &gt; reason</li>
+<li><strong>Amoral universe</strong>: nature is indifferent, not nurturing</li>
+<li><strong>Literature as laboratory report</strong>: third-person, detached, omniscient</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%96%8B%EF%B8%8F-iv-major-writers--works">🖋️ IV. Major Writers &amp; Works</h3>
+<hr>
+<h4 id="%F0%9F%9F%A5-stephen-crane-1871%E2%80%931900">🟥 <strong>Stephen Crane (1871–1900)</strong></h4>
+<ul>
+<li>
+<p><strong><em>Maggie: A Girl of the Streets</em> (1893)</strong></p>
+<blockquote>
+<p>First uncompromising American naturalist novel; poverty, degradation, no moral judgment</p>
+</blockquote>
+</li>
+<li>
+<p><strong><em>The Red Badge of Courage</em> (1895)</strong></p>
+<blockquote>
+<p>Civil War psychological novel; heroism questioned; war as meaningless suffering
+<em>Finale</em>: nature is indifferent, not redemptive (“sun shines anyway”)
+<strong>Theme</strong>: instinct &gt; reason, man = animal in extreme conditions</p>
+</blockquote>
+</li>
+<li>
+<p><strong><em>The Open Boat</em> (1897)</strong></p>
+<blockquote>
+<p>Survival narrative; highlights <strong>indifference of nature</strong>, futility of human will</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>🔍 <em>“Characters are posed in situations that exceed their smugly humanizing judgment.”</em></p>
+</blockquote>
+<hr>
+<h4 id="%F0%9F%90%99-frank-norris-1870%E2%80%931902">🐙 <strong>Frank Norris (1870–1902)</strong></h4>
+<ul>
+<li>
+<p><strong><em>The Octopus</em> (1901)</strong></p>
+<blockquote>
+<p>Pacific Railroad = monstrous capitalism
+Nature and commerce conspire to crush individuals</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="%F0%9F%A7%8D%E2%80%8D%E2%99%80%EF%B8%8F-theodore-dreiser-1871%E2%80%931954">🧍‍♀️ <strong>Theodore Dreiser (1871–1954)</strong></h4>
+<ul>
+<li>
+<p><strong><em>Sister Carrie</em> (1900)</strong></p>
+<blockquote>
+<p>Rise of a working-class girl → success = hollow; desire = endless, environment = overpowering
+<strong>Nihilistic tone</strong>: aspiration turns to absurdity</p>
+</blockquote>
+</li>
+<li>
+<p><strong><em>An American Tragedy</em> (1925)</strong></p>
+<blockquote>
+<p>Based on a real murder case; fate, class, ambition crush the individual</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="%F0%9F%90%BA-jack-london-1876%E2%80%931916">🐺 <strong>Jack London (1876–1916)</strong></h4>
+<ul>
+<li>
+<p><strong>Naturalistic survivalist fiction</strong>:</p>
+<blockquote>
+<p><em>To Build a Fire</em>, <em>The Call of the Wild</em>
+Man = beast, instincts in wilderness</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="%F0%9F%8C%AD-upton-sinclair-1878%E2%80%931968">🌭 <strong>Upton Sinclair (1878–1968)</strong></h4>
+<ul>
+<li>
+<p><strong><em>The Jungle</em> (1906)</strong></p>
+<blockquote>
+<p>Exposé of meatpacking industry; poverty, labor exploitation
+Prompted food safety reforms in U.S. law</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="%F0%9F%8E%81-o-henry-1862%E2%80%931910">🎁 <strong>O. Henry (1862–1910)</strong></h4>
+<ul>
+<li>Known for twist endings, urban realism, sentimentality</li>
+<li><em>Not</em> considered a major naturalist due to romanticized tone</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%A7%A0-v-thematic-framework">🧠 V. Thematic Framework</h3>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Expression in Naturalist Texts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌ Free Will</td>
+<td>Humans shaped by heredity, environment</td>
+</tr>
+<tr>
+<td>💥 Instinct vs. Society</td>
+<td>Passion &amp; need crash against social forces</td>
+</tr>
+<tr>
+<td>🌿 Nature</td>
+<td>Amoral, indifferent, not benevolent</td>
+</tr>
+<tr>
+<td>🔁 Determinism</td>
+<td>No control over fate (biological or economic)</td>
+</tr>
+<tr>
+<td>🌀 Alienation</td>
+<td>Individuals trapped in hostile universe</td>
+</tr>
+<tr>
+<td>💔 Illusion vs. Reality</td>
+<td>Glory, love, wealth = ultimately hollow</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%E2%9C%8D%EF%B8%8F-vi-key-literary-techniques">✍️ VI. Key Literary Techniques</h3>
+<ul>
+<li><strong>Third-person omniscient narration</strong></li>
+<li><strong>Detailed description</strong> of setting, weather, physicality</li>
+<li><strong>Detached tone</strong>: like scientific observation</li>
+<li><strong>Symbolism</strong> of nature: sun, river, machinery = indifferent forces</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%A7%AA-vii-sample-essay-questions-review-prep">🧪 VII. Sample Essay Questions (Review Prep)</h3>
+<ol>
+<li><strong>Compare the philosophical foundations of realism and naturalism.</strong></li>
+<li><strong>How does Stephen Crane depict courage in <em>The Red Badge of Courage</em>?</strong></li>
+<li><strong>Discuss how naturalism in <em>Sister Carrie</em> shows the limits of ambition.</strong></li>
+<li><strong>Analyze how naturalistic writing uses nature to subvert transcendental optimism.</strong></li>
+</ol>
+<hr>
+<hr>
+<h2 id="%F0%9F%93%98-week-7-imagism-and-postwar-poetry">📘 WEEK 7: Imagism and Postwar Poetry</h2>
+<hr>
+<h3 id="%F0%9F%A7%A8-i-historical-background--emergence-of-imagism">🧨 I. Historical Background &amp; Emergence of Imagism</h3>
+<ul>
+<li><strong>Poetry boom (1912–1922)</strong> amid dislocation, fragmentation, modern chaos</li>
+<li>Imagism = reaction against Victorian verbosity and rigid forms</li>
+<li>Core aim: <strong>precise, clear, momentary revelation through image</strong></li>
+</ul>
+<hr>
+<h3 id="%F0%9F%8C%A0-ii-three-phases-of-imagism">🌠 II. Three Phases of Imagism</h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Key Ideas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1908–1909</strong></td>
+<td>T.E. Hulme begins theorizing the image (moment of truth)</td>
+</tr>
+<tr>
+<td><strong>1912–1914</strong></td>
+<td>Ezra Pound codifies 3 principles:</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Direct treatment</strong> of subject</li>
+<li><strong>Economy of language</strong></li>
+<li><strong>Free verse</strong> as musical phrase |
+| <strong>1914–1917</strong> | Amygism: Amy Lowell continues the movement |</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%92%A1-what-is-an-image">💡 What Is an Image?</h3>
+<blockquote>
+<p>“An intellectual and emotional complex in an instant of time.” —Ezra Pound
+“A point of excitement converted into a line of vision.” —T.E. Hulme</p>
+</blockquote>
+<p><strong>Example</strong>:
+Ezra Pound, <em>In a Station of the Metro</em></p>
+<blockquote>
+<p><em>The apparition of these faces in the crowd;</em>
+<em>Petals on a wet, black bough.</em></p>
+</blockquote>
+<hr>
+<h3 id="%F0%9F%A7%91%E2%80%8D%F0%9F%8E%93-iii-key-imagists-and-successors">🧑‍🎓 III. Key Imagists and Successors</h3>
+<h4 id="%F0%9F%9F%A3-ezra-pound-1885%E2%80%931972">🟣 Ezra Pound (1885–1972)</h4>
+<ul>
+<li>Leader of Imagism</li>
+<li><strong>Influences</strong>: Chinese, Japanese, Greek poetry</li>
+<li><strong>Cantos</strong>: modern epic, Confucian influence</li>
+<li>Advocated cultural clarity over Western chaos</li>
+</ul>
+<h4 id="%F0%9F%9F%A2-william-carlos-williams-1883%E2%80%931963">🟢 William Carlos Williams (1883–1963)</h4>
+<ul>
+<li>Physician; <strong>localist</strong> (“localism leads to culture”)</li>
+<li>Opposed Pound/Eliot’s internationalism</li>
+<li><em>The Red Wheelbarrow</em>: minimalist American image</li>
+</ul>
+<blockquote>
+<p><em>So much depends / upon / a red wheel / barrow…</em></p>
+</blockquote>
+<h4 id="%F0%9F%9F%A0-ts-eliot-1888%E2%80%931965">🟠 T.S. Eliot (1888–1965)</h4>
+<ul>
+<li><em>The Love Song of J. Alfred Prufrock</em> (1911)</li>
+<li><em>The Waste Land</em> (1922): landmark of high modernism</li>
+<li>Later works: <em>Ash Wednesday</em>, <em>Four Quartets</em></li>
+<li>Became conservative after Nobel Prize (1948)</li>
+</ul>
+<h4 id="%F0%9F%94%B5-wallace-stevens-1879%E2%80%931955">🔵 Wallace Stevens (1879–1955)</h4>
+<ul>
+<li>Businessman-poet</li>
+<li>Believed <strong>beauty arises from ordinary, even sordid life</strong></li>
+<li>Heroism = imposing meaning on chaos</li>
+</ul>
+<h4 id="%F0%9F%9F%A1-robert-frost-1874%E2%80%931963">🟡 Robert Frost (1874–1963)</h4>
+<ul>
+<li>Four-time Pulitzer winner</li>
+<li>Rural New England pastoralism with existential undertones</li>
+</ul>
+<h4 id="%F0%9F%9F%A4-carl-sandburg-1878%E2%80%931967">🟤 Carl Sandburg (1878–1967)</h4>
+<ul>
+<li><em>Chicago Poems</em></li>
+<li>Democratic spirit: “voice of the people”</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%8E%A8-iv-modernist-innovation-form-and-visuals">🎨 IV. Modernist Innovation: Form and Visuals</h3>
+<h4 id="%F0%9F%94%BA-ee-cummings-1894%E2%80%931963">🔺 E.E. Cummings (1894–1963)</h4>
+<ul>
+<li>Poet + painter</li>
+<li>Experimental: <strong>typography</strong>, <strong>syntax</strong>, <strong>visual form</strong></li>
+<li><em>l(a</em>: symbol of falling loneliness</li>
+</ul>
+<blockquote>
+<p><em>( l(a
+le
+af
+fa
+ll
+s)
+one
+l
+iness )</em></p>
+</blockquote>
+<h4 id="%F0%9F%94%BB-hart-crane-1899%E2%80%931932">🔻 Hart Crane (1899–1932)</h4>
+<ul>
+<li><em>White Buildings</em> (1926), <em>The Bridge</em> (1930): lyric modernism</li>
+</ul>
+<h4 id="%F0%9F%94%B7-marianne-moore-1887%E2%80%931972">🔷 Marianne Moore (1887–1972)</h4>
+<ul>
+<li>Precision in observation, miniature detail</li>
+<li>Loved shaped animals, descriptive clarity</li>
+<li>Poetic charm = <strong>intellect + observation</strong></li>
+</ul>
+<hr>
+<h3 id="%F0%9F%A7%A0-v-themes--techniques">🧠 V. Themes &amp; Techniques</h3>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Expression</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✨ Momentary revelation</td>
+<td>Imagistic precision (Pound, Williams)</td>
+</tr>
+<tr>
+<td>🌍 Local vs. global</td>
+<td>Williams: rooted in America; Pound: global classicism</td>
+</tr>
+<tr>
+<td>📏 Form innovation</td>
+<td>Free verse, visual shape (Cummings)</td>
+</tr>
+<tr>
+<td>💔 Alienation</td>
+<td>Eliot’s fragmentation, loneliness</td>
+</tr>
+<tr>
+<td>🧩 Precision &amp; control</td>
+<td>Moore’s measured poetic form</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%F0%9F%93%9D-review-questions">📝 Review Questions</h3>
+<ol>
+<li><strong>Define Imagism. How does it reflect the mood of early 20th-century modernism?</strong></li>
+<li><strong>Choose one poet (e.g., Pound, Williams, Eliot, Moore) and explain how their work reshaped American poetry.</strong></li>
+<li><strong>Discuss the relationship between poetry and image, using examples like <em>The Red Wheelbarrow</em> or <em>In a Station of the Metro</em>.</strong></li>
+</ol>
+<hr>
+<h2 id="%F0%9F%9F%A3-week-8-f-scott-fitzgerald--ernest-hemingway">🟣 WEEK 8: F. Scott Fitzgerald &amp; Ernest Hemingway</h2>
+<hr>
+<h3 id="%F0%9F%95%BA-i-f-scott-fitzgerald-1896%E2%80%931940--the-writer-of-the-jazz-age">🕺 I. <strong>F. Scott Fitzgerald (1896–1940)</strong> — <em>The Writer of the Jazz Age</em></h3>
+<h4 id="%F0%9F%93%9C-historical-background-the-jazz-age">📜 Historical Background: The Jazz Age</h4>
+<ul>
+<li>Term coined by Fitzgerald himself; synonymous with the <strong>Roaring Twenties</strong></li>
+<li>Characterized by <strong>post-WWI disillusionment</strong>, hedonism, and collapse of the American Dream</li>
+<li><strong>Pattern</strong>: <em>Pursuit → Disenchantment → Failure</em></li>
+<li>Fitzgerald and Zelda embodied the youth, glamour, and eventual disillusion of the era</li>
+</ul>
+<h4 id="%F0%9F%96%8B-literary-themes">🖋 Literary Themes</h4>
+<ul>
+<li>Fragility of dreams, spiritual desolation, illusions of wealth and love</li>
+<li>Aesthetic beauty masking moral decay</li>
+<li>Obsession with the past</li>
+</ul>
+<h4 id="%F0%9F%A7%A0-representative-works">🧠 Representative Works</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Key Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>This Side of Paradise (1920)</strong></td>
+<td>Captures post-WWI spiritual void; debut success; establishes Jazz Age tone</td>
+</tr>
+<tr>
+<td><strong>The Beautiful and the Damned (1922)</strong></td>
+<td>Autobiographical; wealth destroys love; moral collapse</td>
+</tr>
+<tr>
+<td><strong>The Great Gatsby (1925)</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Narrator Nick observes Gatsby’s rise and fall</li>
+<li>Gatsby: tragic embodiment of American Dream</li>
+<li><strong>Pattern</strong>: Dream → Illusion → Despair</li>
+<li><em>“So we beat on, boats against the current…”</em></li>
+<li>Called “a cultural-historical allegory” of America |
+| <strong>Tender Is the Night (1934)</strong> | Psychiatrists, decadence, decline—mirrors Fitzgerald’s own breakdown; American excess + spiritual emptiness |
+| <strong>The Last Tycoon (1941)</strong> | Unfinished novel on Hollywood; posthumously published |</li>
+</ul>
+<h4 id="%F0%9F%93%8C-legacy">📌 Legacy</h4>
+<ul>
+<li>An <strong>analyst of American culture</strong></li>
+<li>Captured the <strong>soul of the 1920s</strong>, and its deep-rooted anxieties</li>
+<li>Gatsby is widely seen as his <strong>intellectual masterpiece</strong></li>
+</ul>
+<hr>
+<h3 id="%E2%9A%94%EF%B8%8F-ii-ernest-hemingway-1899%E2%80%931961--the-lost-generations-stoic">⚔️ II. <strong>Ernest Hemingway (1899–1961)</strong> — <em>The Lost Generation’s Stoic</em></h3>
+<h4 id="%F0%9F%8C%8D-the-lost-generation">🌍 The Lost Generation</h4>
+<ul>
+<li>Coined by Gertrude Stein for post-WWI expatriate writers</li>
+<li>Disillusioned, cynical, rootless—often living in Paris</li>
+<li>Hemingway = representative voice (along with Fitzgerald)</li>
+</ul>
+<h4 id="%E2%9C%8D-signature-writing-style">✍ Signature Writing Style</h4>
+<ul>
+<li><strong>Minimalism</strong>: crisp, economical language; short sentences</li>
+<li><strong>Emotional restraint</strong>: no overt expression; invites reader inference</li>
+<li><strong>Iceberg Theory</strong>: 1/8 above water (surface), 7/8 below (meaning)</li>
+<li><strong>Grace under pressure</strong>: stoic dignity in face of violence or futility</li>
+<li>Influenced by: war, bullfighting, sport, journalism</li>
+</ul>
+<h4 id="%F0%9F%A7%A0-literary-themes">🧠 Literary Themes</h4>
+<ul>
+<li><strong>Existential code</strong>: personal choice, stoic courage, acceptance of nothingness</li>
+<li>Man’s <strong>search for meaning</strong> amid a meaningless, brutal world</li>
+<li>Loneliness, loss, impotence (literal and symbolic), ritual as redemption</li>
+</ul>
+<h4 id="%F0%9F%A7%A0-representative-works">🧠 Representative Works</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Key Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The Sun Also Rises (1926)</strong></td>
+<td>Disillusioned expats in France/Spain; bullfighting as ritual; Jake Barnes = emasculated WWI vet; <em>“Isn’t it pretty to think so?”</em></td>
+</tr>
+<tr>
+<td><strong>A Farewell to Arms (1929)</strong></td>
+<td>Love and war in Italy; <em>“Glory, honor, courage… obscene.”</em>; stoicism, disillusionment</td>
+</tr>
+<tr>
+<td><strong>For Whom the Bell Tolls (1940)</strong></td>
+<td>Spanish Civil War; collective liberty; <em>“No man is an island”</em> — shift from individualism to solidarity</td>
+</tr>
+<tr>
+<td><strong>The Old Man and the Sea (1952)</strong></td>
+<td>Santiago’s endurance at sea; brotherhood with nature; <strong>Nobel Prize winner</strong>; final moral affirmation</td>
+</tr>
+<tr>
+<td><strong>Short Works</strong></td>
+<td><em>Six-Word Stories</em>: powerful compression of meaning (e.g., <em>“For sale: baby shoes, never worn.”</em>)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%F0%9F%86%9A-iii-fitzgerald-vs-hemingway">🆚 III. Fitzgerald vs. Hemingway</h3>
+<table>
+<thead>
+<tr>
+<th>Fitzgerald</th>
+<th>Hemingway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analyst of American culture</td>
+<td>Stylist and stoic</td>
+</tr>
+<tr>
+<td>Dream, decadence, decline</td>
+<td>War, survival, futility</td>
+</tr>
+<tr>
+<td>Romantic + disillusioned</td>
+<td>Existential + disciplined</td>
+</tr>
+<tr>
+<td>Complex narration (Nick in Gatsby)</td>
+<td>Minimal narration, reader fills gaps</td>
+</tr>
+<tr>
+<td>Legacy: Jazz Age chronicler</td>
+<td>Legacy: Minimalism + existential hero</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%E2%9D%93-review-questions">❓ Review Questions</h3>
+<ol>
+<li><strong>How does Fitzgerald capture the spirit of the Jazz Age?</strong></li>
+<li><strong>Why is <em>The Great Gatsby</em> considered Fitzgerald’s greatest intellectual achievement?</strong></li>
+<li><strong>Define the Lost Generation. How does Hemingway exemplify it?</strong></li>
+<li><strong>Discuss Hemingway’s Iceberg Theory and how it manifests in his major works.</strong></li>
+<li><strong>Compare Fitzgerald’s romanticism with Hemingway’s stoicism. Which better reflects post-WWI America?</strong></li>
+</ol>
+<hr>
+<h2 id="%F0%9F%9F%A4-week-9-the-west-and-midwest-in-american-literature">🟤 WEEK 9: The West and Midwest in American Literature</h2>
+<hr>
+<h3 id="%F0%9F%8F%9E-i-the-american-west-mobility-future-possibility">🏞 I. The American West: <em>Mobility, Future, Possibility</em></h3>
+<h4 id="%F0%9F%97%BA-historical--mythic-context">🗺 Historical + Mythic Context</h4>
+<ul>
+<li>
+<p>The Western frontier embodies:</p>
+<ul>
+<li><strong>Mobility</strong>: physical and social movement</li>
+<li><strong>Future</strong>: openness to renewal</li>
+<li><strong>Possibility</strong>: new identity, new Eden</li>
+</ul>
+</li>
+<li>
+<p>Settlement of the West = both <strong>material history</strong> and <strong>national mythology</strong></p>
+</li>
+<li>
+<p>Literary output: the <strong>Western</strong>, nostalgic fiction, ecological concerns, and epic family sagas</p>
+</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%96%8A-willa-cather-1873%E2%80%931947">🖊 Willa Cather (1873–1947)</h3>
+<h4 id="%F0%9F%93%8D-themes">📍 Themes</h4>
+<ul>
+<li><strong>Nostalgia</strong> for the Nebraska prairie, immigrant roots</li>
+<li>Strong <strong>female protagonists</strong>, symbolizing endurance and rootedness</li>
+<li><strong>Pastoral ideal</strong> vs. <strong>urban intrusion</strong></li>
+<li>Human-nature relations → <strong>ecological consciousness</strong> ahead of her time</li>
+<li>Women as spiritually connected to land (&quot;land is like a mother&quot;)</li>
+</ul>
+<h4 id="%F0%9F%93%9A-key-works">📚 Key Works</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>O Pioneers! (1913)</strong></td>
+<td>Homesteading women, strength &amp; resilience</td>
+</tr>
+<tr>
+<td><strong>The Song of the Lark (1915)</strong></td>
+<td>Female artistic growth; self-realization</td>
+</tr>
+<tr>
+<td><strong>My Ántonia (1918)</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Narrated by Jim Burden</li>
+<li>Ántonia = woman + land + memory</li>
+<li>Complex triangle: male narrator, female subject, female author</li>
+<li>Pastoral myth, gender lens, spiritual intimacy</li>
+<li>Quote: <em>&quot;The idea of you is a part of my mind.&quot;</em> |</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%8C%8A-john-steinbeck-1902%E2%80%931968">🌊 John Steinbeck (1902–1968)</h3>
+<h4 id="%F0%9F%93%8D-themes">📍 Themes</h4>
+<ul>
+<li><strong>Nature’s indifference</strong>, <strong>class struggle</strong></li>
+<li>California = broken Eden / false promise</li>
+<li>Immigrant hardships, working-class resistance</li>
+<li><strong>Biblical allusions</strong>, social realism, political engagement</li>
+</ul>
+<h4 id="%F0%9F%93%9A-key-works">📚 Key Works</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Of Mice and Men (1937)</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Title from Burns: <em>&quot;best laid plans...&quot;</em></li>
+<li>Simple, dramatic structure (&quot;novel-play&quot;)</li>
+<li>Tragic power in working-class friendship |
+| <strong>The Grapes of Wrath (1939)</strong> |</li>
+<li><em>Western epic</em> of the Joad family</li>
+<li>Biblical exodus → failed American Dream</li>
+<li><strong>Tom Joad</strong>: social rebel, everyman hero</li>
+<li>Quote: <em>&quot;I'll be everywhere... hungry people can eat...&quot;</em></li>
+<li>Ends with <strong>Rose of Sharon</strong>’s act of compassion |
+| <strong>East of Eden (1952)</strong> |</li>
+<li>Epic tale of moral choices and family</li>
+<li>Humanism: <em>&quot;Knowing a man well never leads to hate...&quot;</em> |</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%9F%A1-ii-the-midwest-and-the-rise-of-psychological-realism">🟡 II. The Midwest and the Rise of Psychological Realism</h3>
+<hr>
+<h3 id="%F0%9F%96%8A-sherwood-anderson-1876%E2%80%931941">🖊 Sherwood Anderson (1876–1941)</h3>
+<h4 id="%F0%9F%93%8D-influence">📍 Influence</h4>
+<ul>
+<li>Mentor to Hemingway, Faulkner, Fitzgerald</li>
+<li>Pioneer of <strong>local color + psychological depth</strong></li>
+<li>Inspired <strong>short story cycles</strong>, epiphanic style</li>
+<li>Winesburg = microcosm of early 20th-century America</li>
+</ul>
+<h4 id="%F0%9F%93%9A-winesburg-ohio-1919">📚 <strong>Winesburg, Ohio (1919)</strong></h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📜 Structure</td>
+<td>25 interconnected stories (&quot;story cycle&quot;); anchored by George Willard</td>
+</tr>
+<tr>
+<td>🧠 Focus</td>
+<td>Emotional isolation, failure of communication, inner distortion = <strong>the Grotesque</strong></td>
+</tr>
+<tr>
+<td>✨ Style</td>
+<td>Poetic realism, naïve simplicity, deep psychological insight</td>
+</tr>
+<tr>
+<td>🧍 George Willard</td>
+<td>Coming-of-age arc; emotional catalyst; Anderson’s alter ego</td>
+</tr>
+<tr>
+<td>🌪 Grotesques</td>
+<td>Ordinary people twisted by repressed desire and inarticulateness; <em>“sweetness of a twisted apple”</em></td>
+</tr>
+<tr>
+<td>📚 Literary Technique</td>
+<td>Epiphany-driven, draws from Joyce’s <em>Dubliners</em>; mix of Gothic + lyrical prose</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%F0%9F%9F%A9-iii-the-new-criticism-1940s">🟩 III. The New Criticism (1940s+)</h3>
+<h4 id="%F0%9F%93%8D-overview">📍 Overview</h4>
+<ul>
+<li>US literary movement → <strong>text-focused analysis</strong></li>
+<li>Rejected historical/authorial context: <em>“work for work’s sake”</em></li>
+<li>Focused on <strong>structure, unity, ambiguity</strong>, form/content synthesis</li>
+</ul>
+<h4 id="%F0%9F%A7%A0-key-thinkers">🧠 Key Thinkers</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>I.A. Richards</strong></td>
+<td>Structure over subject; reading without external context</td>
+</tr>
+<tr>
+<td><strong>T.S. Eliot</strong></td>
+<td>Advocated “objective correlative”</td>
+</tr>
+<tr>
+<td><strong>William Empson</strong></td>
+<td><em>Seven Types of Ambiguity</em> (1938)</td>
+</tr>
+<tr>
+<td><strong>Cleanth Brooks + Robert Penn Warren</strong></td>
+<td><em>Understanding Poetry</em> (1938)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="%F0%9F%93%89-weaknesses">📉 Weaknesses</h4>
+<ul>
+<li>Too abstract for novels, history-heavy texts</li>
+<li>Treats literature as science → undervalues <strong>subjective and emotional power</strong></li>
+<li>Still widely taught in classroom for <strong>close reading</strong> technique</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%93%9D-review-prompts">📝 Review Prompts</h3>
+<ol>
+<li><strong>What does the West symbolize in American literary history?</strong> Compare Cather and Steinbeck.</li>
+<li><strong>How does Sherwood Anderson shape modern American storytelling?</strong></li>
+<li><strong>What are the main ideas of New Criticism?</strong> How is it useful—and limited?</li>
+</ol>
+<hr>
+<h2 id="week-10-sountern-writing">Week 10 Sountern Writing</h2>
+<h2 id="%F0%9F%A7%AD-the-southern-renaissance-definition--context">🧭 <strong>The Southern Renaissance: Definition &amp; Context</strong></h2>
+<ul>
+<li><strong>Timeframe</strong>: 1920s–1940s; with post-WWII continuation.</li>
+<li><strong>Core Tension</strong>: Cultural and ideological gap between the <strong>agrarian South</strong> and <strong>industrial North</strong>.</li>
+<li>Writers confronted the <strong>myth of the Old South</strong>, grappling with <strong>race, history, identity</strong>, and <strong>modernity</strong>.</li>
+<li>The movement began with <strong>William Faulkner</strong> and was extended by younger postwar authors with more critical, often feminist or existentialist perspectives.</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%A7%A0-william-faulkner-1897%E2%80%931962">🧠 <strong>William Faulkner (1897–1962)</strong></h2>
+<h3 id="%E2%9C%8D%EF%B8%8F-major-contributions">✍️ <em>Major Contributions</em>:</h3>
+<ul>
+<li>Developed the fictional <strong>Yoknapatawpha County</strong> (based on Mississippi) as a <strong>symbolic world</strong> representing Southern history, culture, and decay.</li>
+<li>Known for <strong>experimental techniques</strong>: interior monologue, looping chronology, multiple narrators.</li>
+<li>Wrote about the <strong>conflict between Old South and New South</strong>, <strong>multigenerational decline</strong>, and <strong>personal identity crises</strong>.</li>
+</ul>
+<h3 id="%F0%9F%93%9A-major-works">📚 <em>Major Works</em>:</h3>
+<table>
+<thead>
+<tr>
+<th>Work</th>
+<th>Themes/Innovations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The Sound and the Fury (1929)</strong></td>
+<td>Fragmented time, subjective perspectives, family downfall</td>
+</tr>
+<tr>
+<td><strong>As I Lay Dying (1930)</strong></td>
+<td>Stream of consciousness; family journey to bury the mother</td>
+</tr>
+<tr>
+<td><strong>Light in August (1932)</strong></td>
+<td>Racial identity, alienation, biblical imagery</td>
+</tr>
+<tr>
+<td><strong>Absalom, Absalom! (1936)</strong></td>
+<td>Myth of Southern dynasty, narrative unreliability</td>
+</tr>
+<tr>
+<td><strong>Go Down, Moses (1942)</strong></td>
+<td>Race, inheritance, human-nature bond (esp. “The Bear”)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%F0%9F%8E%AF-faulknerian-features">🎯 <em>Faulknerian Features</em>:</h3>
+<ul>
+<li><strong>Faulknerian English</strong>: rich, dialect-heavy, often hard to decipher.</li>
+<li><strong>Themes</strong>: time, identity, decay, madness, memory, South as moral space.</li>
+<li><strong>Style</strong>: Nonlinear, multivocal, symbolic, often <strong>contradictory or paradoxical</strong>.</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%91%A9%E2%80%8D%F0%9F%8E%A4-key-female-southern-writers-modern-gothic">👩‍🎤 <strong>Key Female Southern Writers (Modern Gothic)</strong></h2>
+<h3 id="katherine-anne-porter"><strong>Katherine Anne Porter</strong></h3>
+<ul>
+<li>Known for <strong>psychological realism</strong> and <strong>free indirect speech</strong>.</li>
+<li><em>“The Jilting of Granny Weatherall”</em>: Stream of consciousness; inner emotional life; aging and abandonment.</li>
+<li><em>Ship of Fools (1962)</em>: Allegorical, multinational voyage as human moral failure.</li>
+</ul>
+<h3 id="eudora-welty"><strong>Eudora Welty</strong></h3>
+<ul>
+<li>Focused on <strong>place, detail, and rhythm</strong> of Southern life.</li>
+<li><em>“Death of a Traveling Salesman”</em>: Isolation, misunderstanding, emotional distance.</li>
+<li><em>Delta Wedding</em>: Family life viewed through a child’s consciousness; lyrical and observational.</li>
+</ul>
+<h3 id="carson-mccullers"><strong>Carson McCullers</strong></h3>
+<ul>
+<li>Explored <strong>alienation, sexual identity, and spiritual loneliness</strong>.</li>
+<li><em>The Heart Is a Lonely Hunter</em>: Multiple outcast characters (mute, adolescent girl, misfits).</li>
+<li><em>The Ballad of the Sad Café</em>: Doomed love, grotesque Southern Gothic.</li>
+<li><em>The Member of the Wedding</em>: Coming of age, rejection, existential disconnection.</li>
+<li><em>Clock Without Hands</em>: A late, universalized Southern Gothic vision — “sense of the awful.”</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%93%8C-review-topics">📌 <strong>Review Topics</strong></h2>
+<ul>
+<li><strong>Southern Renaissance</strong>: Literary reawakening focused on memory, race, modernity.</li>
+<li><strong>Faulkner</strong>: Inventor of Yoknapatawpha, stream of consciousness master, obsessed with time and decay.</li>
+<li><strong>Southern Female Gothic</strong>: Porter, Welty, McCullers—focused on emotional interiority, place, identity, gender, and alienation.</li>
+</ul>
+<hr>
+<h2 id="week-11-american-drama">Week 11 American Drama</h2>
+<hr>
+<h3 id="%F0%9F%8E%AD-eugene-oneill-1888%E2%80%931953--the-father-of-american-tragedy">🎭 Eugene O’Neill (1888–1953) — <em>The Father of American Tragedy</em></h3>
+<h4 id="%F0%9F%A7%AD-historical-context--significance">🧭 Historical Context &amp; Significance</h4>
+<ul>
+<li>First great American playwright with international stature.</li>
+<li>Won <strong>4 Pulitzer Prizes</strong> (e.g. <em>Beyond the Horizon</em> 1920, <em>Anna Christie</em> 1922).</li>
+<li>Awarded <strong>Nobel Prize for Literature in 1936</strong>.</li>
+<li>Influenced by Greek tragedy, Ibsen, Freud, and modernist techniques.</li>
+<li>His work began in the <strong>1910s</strong>, a cornerstone moment for American drama.</li>
+</ul>
+<h4 id="%E2%9C%92%EF%B8%8F-thematic-focus">✒️ Thematic Focus</h4>
+<ul>
+<li><strong>The “saving illusion”</strong>: characters survive through self-deception.</li>
+<li>Tragic view of life: a mix of <em>realism</em>, <em>psychological depth</em>, and <em>symbolism</em>.</li>
+<li>Constant obsession: the search for meaning in a godless, indifferent universe.</li>
+<li>Family trauma and personal guilt often drawn from his own life.</li>
+</ul>
+<h4 id="%F0%9F%A7%A0-key-techniques">🧠 Key Techniques</h4>
+<ul>
+<li><strong>Stream of consciousness on stage</strong>.</li>
+<li><strong>Realistic detail + mythic structure</strong> (ordinary life with tragic dignity).</li>
+<li>Frequent use of fog, darkness, or silence to symbolize isolation and confusion.</li>
+<li>Long monologues reflecting inner torment.</li>
+</ul>
+<h4 id="%F0%9F%8C%AB%EF%B8%8F-representative-works">🌫️ Representative Works</h4>
+<ol>
+<li>
+<p><strong>The Iceman Cometh (1946)</strong></p>
+<ul>
+<li>Set in a bar full of alcoholics clinging to “pipe dreams.”</li>
+<li><em>Theme:</em> self-delusion is the only thing that keeps people alive.</li>
+<li><em>Genre:</em> Tragicomedy.</li>
+<li><em>Legacy:</em> Influenced absurdist theatre.</li>
+</ul>
+</li>
+<li>
+<p><strong>Long Day’s Journey Into Night (written 1941, published 1956)</strong></p>
+<ul>
+<li><em>Autobiographical masterpiece.</em></li>
+<li>A single day in the Tyrone family: morphine-addicted mother, alcoholic father and sons.</li>
+<li>The <strong>fog</strong> = emotional isolation and denial.</li>
+<li><em>No catharsis</em>: ends in darkness, not clarity.</li>
+<li>O’Neill shows <em>mediocre</em>, <em>ordinary</em>, even <em>pathetic</em> people as <em>tragic</em>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mourning Becomes Electra (1931)</strong></p>
+<ul>
+<li><em>Modern rewrite</em> of Aeschylus’s <em>Oresteia</em>.</li>
+<li>Transposes the myth of revenge, incest, and guilt into post-Civil War New England.</li>
+</ul>
+</li>
+<li>
+<p><strong>Desire Under the Elms (1924)</strong></p>
+<ul>
+<li>Rewrites Euripides’ <em>Hippolytus</em>.</li>
+<li>Themes of <strong>repressed sexuality</strong>, <strong>family conflict</strong>, and <strong>ownership of land</strong>.</li>
+</ul>
+</li>
+</ol>
+<h4 id="%F0%9F%AA%9E-key-ideas-to-remember">🪞 Key Ideas to Remember</h4>
+<ul>
+<li>O’Neill introduced <em>modernism</em> and <em>tragic grandeur</em> to American theater.</li>
+<li>He dramatized the <strong>everyday man’s suffering</strong> as <strong>epic</strong>.</li>
+<li>His characters rarely achieve redemption; instead, they drift in fogs of their own making.</li>
+<li>He opened the stage to <strong>psychological pain</strong>, <strong>family trauma</strong>, and <strong>existential dread</strong>.</li>
+</ul>
+<p>Based on the document, here is a <strong>concise yet complete summary</strong> of:</p>
+<hr>
+<h2 id="%F0%9F%93%98-week-12%E2%80%9313-american-literature-after-1945">📘 WEEK 12–13: American Literature After 1945</h2>
+<h3 id="%F0%9F%A7%AD-historical-background">🧭 Historical Background</h3>
+<ul>
+<li>Post-1945 America = global superpower + Cold War + Civil Rights Movement + Vietnam War + consumer culture + counterculture.</li>
+<li>Literature reflects <em>disillusionment, rebellion, absurdity, alienation</em>, and later, <em>pluralism</em> and <em>identity politics</em>.</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%96%8B%EF%B8%8F-major-post-1945-literary-trends">🖋️ Major Post-1945 Literary Trends</h3>
+<h4 id="1-postwar-realism--psychological-exploration">1. <strong>Postwar Realism &amp; Psychological Exploration</strong></h4>
+<ul>
+<li>Realist depictions of everyday life + deep introspection.</li>
+</ul>
+<h5 id="%E2%9E%A4-saul-bellow-1915%E2%80%932005">➤ Saul Bellow (1915–2005)</h5>
+<ul>
+<li><em>The Adventures of Augie March</em> (1953): “great American novel” vibe</li>
+<li>Jewish-American; blends intellectualism with street smarts.</li>
+<li>Themes: alienation, personal freedom, intellectual survival.</li>
+</ul>
+<h5 id="%E2%9E%A4-bernard-malamud">➤ Bernard Malamud</h5>
+<ul>
+<li><em>The Assistant</em>, <em>The Fixer</em>.</li>
+<li>Focus on ethical dilemmas, Jewish suffering, and redemptive suffering.</li>
+</ul>
+<hr>
+<h4 id="2-the-beat-generation-1950s">2. <strong>The Beat Generation (1950s)</strong></h4>
+<ul>
+<li>Anti-materialism, spontaneity, Zen Buddhism, drug culture.</li>
+<li>Rejected conformity and celebrated spiritual liberation.</li>
+</ul>
+<h5 id="%E2%9E%A4-jack-kerouac">➤ Jack Kerouac</h5>
+<ul>
+<li><em>On the Road</em>: cross-country journey, jazz rhythm prose.</li>
+</ul>
+<h5 id="%E2%9E%A4-allen-ginsberg">➤ Allen Ginsberg</h5>
+<ul>
+<li><em>Howl</em>: revolutionary poem, obscenity trial, homosexual identity, madness, Whitman influence.</li>
+</ul>
+<hr>
+<h4 id="3-postmodernism-1960s%E2%80%93">3. <strong>Postmodernism (1960s–)</strong></h4>
+<ul>
+<li>Self-reflexive, ironic, fragmented narratives. Blurs high/low culture.</li>
+</ul>
+<h5 id="%E2%9E%A4-thomas-pynchon">➤ Thomas Pynchon</h5>
+<ul>
+<li><em>Gravity’s Rainbow</em>: paranoia, entropy, systems theory.</li>
+</ul>
+<h5 id="%E2%9E%A4-don-delillo">➤ Don DeLillo</h5>
+<ul>
+<li><em>White Noise</em>: media saturation, fear of death, consumerism.</li>
+</ul>
+<h5 id="%E2%9E%A4-john-barth--john-hawkes--william-gaddis">➤ John Barth / John Hawkes / William Gaddis</h5>
+<ul>
+<li>Metafiction, unreliable narrators, “literature about literature.”</li>
+</ul>
+<hr>
+<h4 id="4-confessional-poetry">4. <strong>Confessional Poetry</strong></h4>
+<ul>
+<li>Personal trauma, taboo topics, mental illness, sexuality.</li>
+</ul>
+<h5 id="%E2%9E%A4-sylvia-plath">➤ Sylvia Plath</h5>
+<ul>
+<li><em>Ariel</em>, <em>The Bell Jar</em> (semi-autobiographical).</li>
+<li>Struggles with depression, womanhood, selfhood.</li>
+</ul>
+<h5 id="%E2%9E%A4-anne-sexton">➤ Anne Sexton</h5>
+<ul>
+<li>Explored therapy, suicide, motherhood, and desire.</li>
+</ul>
+<hr>
+<h4 id="5-feminist-literature">5. <strong>Feminist Literature</strong></h4>
+<ul>
+<li>Challenges patriarchy, gender roles, motherhood, sexual freedom.</li>
+</ul>
+<h5 id="%E2%9E%A4-toni-morrison">➤ Toni Morrison</h5>
+<ul>
+<li><em>The Bluest Eye</em>, <em>Beloved</em>: black female experience, trauma, memory, haunting past.</li>
+<li>Nobel Laureate. Lyrical and mythic.</li>
+</ul>
+<h5 id="%E2%9E%A4-margaret-atwood-canada-us-crossover">➤ Margaret Atwood (Canada-US crossover)</h5>
+<ul>
+<li><em>The Handmaid’s Tale</em>: dystopian critique of patriarchy and theocracy.</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%93%98-week-14-diversity-in-american-literature">📘 WEEK 14: Diversity in American Literature</h2>
+<hr>
+<h3 id="%F0%9F%96%A4-african-american-literature">🖤 African American Literature</h3>
+<h4 id="%E2%9E%A4-richard-wright">➤ Richard Wright</h4>
+<ul>
+<li><em>Native Son</em>: systemic racism, psychological oppression.</li>
+</ul>
+<h4 id="%E2%9E%A4-ralph-ellison">➤ Ralph Ellison</h4>
+<ul>
+<li><em>Invisible Man</em>: existential invisibility, identity crisis.</li>
+</ul>
+<h4 id="%E2%9E%A4-james-baldwin">➤ James Baldwin</h4>
+<ul>
+<li><em>Go Tell It on the Mountain</em>, <em>The Fire Next Time</em>.</li>
+<li>Homosexuality, Black identity, Christianity, racial injustice.</li>
+</ul>
+<h4 id="%E2%9E%A4-maya-angelou">➤ Maya Angelou</h4>
+<ul>
+<li><em>I Know Why the Caged Bird Sings</em>: trauma, resilience, Black womanhood.</li>
+</ul>
+<h4 id="%E2%9E%A4-alice-walker">➤ Alice Walker</h4>
+<ul>
+<li><em>The Color Purple</em>: epistolary novel about abuse, lesbian love, and liberation.</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%AA%B6-native-american-literature">🪶 Native American Literature</h3>
+<h4 id="%E2%9E%A4-n-scott-momaday">➤ N. Scott Momaday</h4>
+<ul>
+<li><em>House Made of Dawn</em>: Pulitzer-winning novel, spiritual alienation, oral tradition.</li>
+</ul>
+<h4 id="%E2%9E%A4-leslie-marmon-silko">➤ Leslie Marmon Silko</h4>
+<ul>
+<li><em>Ceremony</em>: WWII veteran’s return, Pueblo myths, healing rituals.</li>
+</ul>
+<h4 id="%E2%9E%A4-sherman-alexie">➤ Sherman Alexie</h4>
+<ul>
+<li><em>The Lone Ranger and Tonto Fistfight in Heaven</em>.</li>
+<li>Humor + heartbreak on the reservation.</li>
+</ul>
+<hr>
+<h3 id="%F0%9F%A7%A7-chinese-american-literature">🧧 Chinese American Literature</h3>
+<h4 id="%E2%9E%A4-maxine-hong-kingston">➤ Maxine Hong Kingston</h4>
+<ul>
+<li><em>The Woman Warrior</em>: blend of memoir and myth; voice of Chinese American girlhood.</li>
+</ul>
+<h4 id="%E2%9E%A4-amy-tan">➤ Amy Tan</h4>
+<ul>
+<li><em>The Joy Luck Club</em>: mother-daughter relations, immigrant tensions, transgenerational trauma.</li>
+</ul>
+<hr>
+<h3 id="%E2%9C%8D%EF%B8%8F-common-themes-across-diverse-writers">✍️ Common Themes Across Diverse Writers</h3>
+<ul>
+<li><strong>Identity &amp; Voice</strong>: Who am I? Who speaks for me?</li>
+<li><strong>Cultural memory</strong>: Family, history, trauma.</li>
+<li><strong>Hybridity</strong>: Between languages, traditions, nations.</li>
+<li><strong>Alienation and Empowerment</strong>: Marginalization vs reclaiming agency.</li>
+</ul>
+<hr>
+
+</body>
+</html>
